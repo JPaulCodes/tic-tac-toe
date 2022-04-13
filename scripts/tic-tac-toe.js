@@ -13,8 +13,13 @@ const gameboard = (() => {
 
   const checkField = (index) => gameboardArray[index];
 
+  const resetBoard = () => {
+    gameboardArray.fill(undefined);
+  };
+
   return {
     setField,
     checkField,
+    resetBoard,
   };
 })();
